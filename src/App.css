@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.8s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: #3e4b66;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  width: 60rem;
+  font-size: 1rem;
+  height: 30rem;
+  background-color: #548cff /*#548cff*/;
+  box-shadow: 0 0.5em 2.5em rgba(0, 0, 0, 0.15) !important;
+  color: rgba(255, 255, 255, 0.9);
 }
+.quistion {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  user-select: none;
+  width: 50rem;
+  margin: 0 auto;
+  height: 8rem;
+  text-align: center;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 39.5rem;
+  margin: 0 auto;
+}
+.options .option {
+  width: 39.5rem;
+  background-color: #ffffff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.options .option label {
+  width: 39.5rem;
+  font-size: 1.5rem;
+  padding: 1.54rem 10rem;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+.options .option input[type="radio"] {
+  display: none;
+}
+.options .option:not(:last-child) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.options .option:hover {
+  transform: scale(1.02);
+  background-color: #81b214;
+  box-shadow: 0 0.5em 2.5em rgba(0, 0, 0, 0.15) !important;
+  color: rgba(255, 255, 255, 0.9);
+}
+.options label:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.submit {
+  position: relative;
+
+  top: 5rem;
+  background-color: #3dbe6f;
+  width: 60rem;
+  font-size: 1.5rem;
+  height: 5rem;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
 }

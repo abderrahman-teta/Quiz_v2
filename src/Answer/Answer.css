@@ -1,0 +1,11 @@
+.correct {
+  background-color: #2fdd92 !important;
+  color: white;
+}
+.wrong {
+  background-color: #ff0075;
+}
+
+.backagruond {
+  background-color: #fff;
+}
