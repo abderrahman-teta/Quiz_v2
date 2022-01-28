@@ -2,10 +2,36 @@
   background-color: #2fdd92 !important;
   color: white;
 }
-.wrong {
-  background-color: #ff0075;
-}
 
 .backagruond {
   background-color: #fff;
+}
+.options .option {
+  width: 39.5rem;
+  background-color: #ffffff;
+  color: #000;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.54rem 10rem;
+}
+
+.options .option:not(:last-child) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.options .option:hover {
+  transform: scale(1.02);
+  background-color: #81b214;
+  box-shadow: 0 0.5em 2.5em rgba(0, 0, 0, 0.15) !important;
+  color: rgba(255, 255, 255, 0.9);
+}
+.options label:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.wrong {
+  background-color: #ff0075 !important;
 }

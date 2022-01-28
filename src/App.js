@@ -17,11 +17,12 @@ console.log(totalPoint);
     setList(data[count])
    
     
-    let elems = document.querySelectorAll("label");
+    let elems = document.querySelectorAll("button");
     
  [].forEach.call(elems, function(el) {
     el.classList.remove("correct");
     el.classList.remove("wrong");
+    el.disabled = false
 });
     setBackagrouand("backagruond")
     //classList.add('correct')

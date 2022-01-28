@@ -15,23 +15,25 @@ const Answer = ({List,totalPoint,backgaround,setBackagruond,setTotalPoint,count}
 //  var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3');
 
     const handelClcik = (event) =>{
-console.log(event.target.innerHTML);
+
                 
-                    if(event.target.innerHTML == answer ){
+                    if(event.target.textContent == answer ){
                         
                         setTotalPoint(totalPoint + 1)
                         event.target.classList.add("correct");
-                        console.log( event.target.parentElement.nextSibling.lastChild);
-                       event.target.parentElement.nextSibling.lastChild.disabled =true;
-                      //  console.log( event.target.parentElement.nextSibling.disabled);
+                        event.target.disabled = true;
+                        event.target.nextSibling.disabled = true;
+                        console.log( event.target.nextSibling);
                       
                      
                       
                  
                    
                     }else {
-                       
-                        event.target.classList.add("wrong")
+                       console.log(event.target.parentElement.firstChild);
+                        event.target.classList.add("wrong");
+                        event.target.disabled = true;
+                        event.target.parentElement.firstChild.disabled = true
                         
                     }
                 
@@ -40,11 +42,9 @@ console.log(event.target.innerHTML);
     return(
         list.map(answer =>{
             return(
-                <div className="option" key={answer} >
-                    <input type="radio" name={answer} value={answer} id={answer}  />
-                    <label htmlFor={answer}  onClick={handelClcik}>{answer}</label>
-                    
-                </div>
+                
+                    <button  key={answer} className="option" onClick={handelClcik}>{answer}</button>
+              
                 
             )
         })
