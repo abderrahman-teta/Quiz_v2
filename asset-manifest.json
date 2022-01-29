@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/abderrahman-teta/Quiz_v2/static/css/main.51436fe4.css",
+    "main.js": "/abderrahman-teta/Quiz_v2/static/js/main.c5a7e2c2.js",
+    "static/js/787.83904489.chunk.js": "/abderrahman-teta/Quiz_v2/static/js/787.83904489.chunk.js",
+    "index.html": "/abderrahman-teta/Quiz_v2/index.html",
+    "main.51436fe4.css.map": "/abderrahman-teta/Quiz_v2/static/css/main.51436fe4.css.map",
+    "main.c5a7e2c2.js.map": "/abderrahman-teta/Quiz_v2/static/js/main.c5a7e2c2.js.map",
+    "787.83904489.chunk.js.map": "/abderrahman-teta/Quiz_v2/static/js/787.83904489.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51436fe4.css",
+    "static/js/main.c5a7e2c2.js"
+  ]
+}
