@@ -30,9 +30,11 @@ console.log(totalPoint);
   }
   return (
     <div className="App">
-      <Question List={List}/>
+      
+      {count < data.length ?<Question List={List} count={count}/>: <h1>Your total score is :</h1>}
       <div className='options'>
-      <Answer List={List} totalPoint={totalPoint} setTotalPoint={setTotalPoint} count={count} backgaround={backgaround} setBackagruond={setBackagrouand} />
+        {count < data.length ? <Answer List={List} totalPoint={totalPoint} setTotalPoint={setTotalPoint} count={count} backgaround={backgaround} setBackagruond={setBackagrouand} /> : <h1>{totalPoint}/{data.length}</h1>}
+      
       </div>
       <div className='submit' onClick={handelClick}>
         <p>Next</p>

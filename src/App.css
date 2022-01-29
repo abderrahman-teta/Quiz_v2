@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   transition: all 0.8s ease;
+  user-select: none;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 .App {
   width: 60rem;
   font-size: 1rem;
-  height: 30rem;
+
   background-color: #548cff /*#548cff*/;
   box-shadow: 0 0.5em 2.5em rgba(0, 0, 0, 0.15) !important;
   color: rgba(255, 255, 255, 0.9);
@@ -44,42 +45,9 @@ body {
   width: 39.5rem;
   margin: 0 auto;
 }
-.options .option {
-  width: 39.5rem;
-  background-color: #ffffff;
 
-  color: #000;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-.options .option label {
-  width: 39.5rem;
-  font-size: 1.5rem;
-  padding: 1.54rem 10rem;
-  color: #000;
-  text-align: center;
-  cursor: pointer;
-}
-.options .option input[type="radio"] {
-  display: none;
-}
-.options .option:not(:last-child) {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.options .option:hover {
-  transform: scale(1.02);
-  background-color: #81b214;
-  box-shadow: 0 0.5em 2.5em rgba(0, 0, 0, 0.15) !important;
-  color: rgba(255, 255, 255, 0.9);
-}
-.options label:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
 .submit {
   position: relative;
-
   top: 5rem;
   background-color: #3dbe6f;
   width: 60rem;
@@ -88,4 +56,45 @@ body {
   padding: 1.5rem;
   text-align: center;
   cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .App {
+    margin-top: 5rem;
+    width: 50rem !important;
+  }
+  .submit {
+    width: 100%;
+    bottom: 0;
+  }
+  .quistion {
+    width: 100%;
+  }
+  .options {
+    width: 80%;
+    padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .App {
+    margin-top: 3rem;
+    width: 100vw !important;
+  }
+  .submit {
+    width: 100%;
+  }
+  .quistion {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .options .option {
+    width: 80% !important;
+    padding-top: 1rem;
+    margin: 0 auto;
+  }
 }

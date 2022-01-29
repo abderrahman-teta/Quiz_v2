@@ -1,5 +1,5 @@
 
-const Question = ({List}) =>{
+const Question = ({List,count}) =>{
     
    
     let question = List.content;
@@ -9,7 +9,7 @@ const Question = ({List}) =>{
         
             
                 <div className="quistion">
-                    <p>{question}</p>
+                    <p> <span>{count} -</span> {question}</p>
                 </div>
             
         
