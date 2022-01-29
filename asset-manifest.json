@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/abderrahman-teta/Quiz_v2/static/css/main.51436fe4.css",
-    "main.js": "/abderrahman-teta/Quiz_v2/static/js/main.c5a7e2c2.js",
-    "static/js/787.83904489.chunk.js": "/abderrahman-teta/Quiz_v2/static/js/787.83904489.chunk.js",
-    "index.html": "/abderrahman-teta/Quiz_v2/index.html",
-    "main.51436fe4.css.map": "/abderrahman-teta/Quiz_v2/static/css/main.51436fe4.css.map",
-    "main.c5a7e2c2.js.map": "/abderrahman-teta/Quiz_v2/static/js/main.c5a7e2c2.js.map",
-    "787.83904489.chunk.js.map": "/abderrahman-teta/Quiz_v2/static/js/787.83904489.chunk.js.map"
+    "main.css": "/Quiz_v2/static/css/main.bd114b75.css",
+    "main.js": "/Quiz_v2/static/js/main.1bcf0f20.js",
+    "static/js/787.83904489.chunk.js": "/Quiz_v2/static/js/787.83904489.chunk.js",
+    "index.html": "/Quiz_v2/index.html",
+    "main.bd114b75.css.map": "/Quiz_v2/static/css/main.bd114b75.css.map",
+    "main.1bcf0f20.js.map": "/Quiz_v2/static/js/main.1bcf0f20.js.map",
+    "787.83904489.chunk.js.map": "/Quiz_v2/static/js/787.83904489.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51436fe4.css",
-    "static/js/main.c5a7e2c2.js"
+    "static/css/main.bd114b75.css",
+    "static/js/main.1bcf0f20.js"
   ]
 }
